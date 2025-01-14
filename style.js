@@ -30,8 +30,8 @@ boxes.forEach((box)=>{
     }
     box.disabled=true;
     count++;
-    let win=winnerCheck();
-    if(count==9 && !win){
+    winnerCheck();
+    if(count==9){
         winnerText.innerText=`Match is draw`;
 textContainer.classList.remove("hide")
 gameContainer.classList.add("hide")
